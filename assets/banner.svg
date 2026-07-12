@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0a1f"/>
+      <stop offset="55%" stop-color="#1a1236"/>
+      <stop offset="100%" stop-color="#26123f"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="glowKey" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="corner" cx="100%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#6d28d9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bff0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="360" fill="url(#corner)"/>
+
+  <!-- faint grid -->
+  <g stroke="#8b5cf6" stroke-opacity="0.08">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="800" y1="0" x2="800" y2="360"/>
+    <line x1="1000" y1="0" x2="1000" y2="360"/>
+  </g>
+
+  <!-- background LFO shaper curves -->
+  <path d="M 620 340 C 700 260, 740 60, 830 60 C 920 60, 950 300, 1040 300 C 1090 300, 1110 200, 1150 200"
+        fill="none" stroke="url(#wave2)" stroke-width="3"/>
+  <path d="M 640 320 C 720 220, 760 100, 850 100 C 940 100, 970 280, 1060 280 C 1100 280, 1120 220, 1160 220"
+        fill="none" stroke="url(#wave1)" stroke-width="2.5" opacity="0.6"/>
+
+  <!-- right side stylized shaper module -->
+  <g transform="translate(870,90)">
+    <rect x="0" y="0" width="260" height="160" rx="14" fill="#150e2c" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1.5"/>
+    <polyline points="20,120 55,40 90,110 125,55 160,130 195,45 230,100 245,70"
+              fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="20" cy="120" r="4" fill="#22d3ee"/>
+    <circle cx="55" cy="40" r="4" fill="#a855f7"/>
+    <circle cx="90" cy="110" r="4" fill="#22d3ee"/>
+    <circle cx="125" cy="55" r="4" fill="#a855f7"/>
+    <circle cx="160" cy="130" r="4" fill="#22d3ee"/>
+    <circle cx="195" cy="45" r="4" fill="#a855f7"/>
+    <circle cx="230" cy="100" r="4" fill="#22d3ee"/>
+  </g>
+
+  <!-- key icon representing license unlock -->
+  <g transform="translate(1005,235)">
+    <circle cx="0" cy="0" r="46" fill="url(#glowKey)"/>
+    <circle cx="0" cy="0" r="17" fill="none" stroke="#fbbf24" stroke-width="6"/>
+    <rect x="14" y="-4" width="46" height="8" rx="3" fill="#fbbf24"/>
+    <rect x="48" y="4" width="8" height="14" fill="#fbbf24"/>
+    <rect x="35" y="4" width="8" height="10" fill="#fbbf24"/>
+  </g>
+
+  <!-- decorative module bars left -->
+  <g opacity="0.5">
+    <rect x="60" y="300" width="6" height="30" fill="#22d3ee"/>
+    <rect x="72" y="285" width="6" height="45" fill="#a855f7"/>
+    <rect x="84" y="295" width="6" height="35" fill="#22d3ee"/>
+  </g>
+
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="56" font-weight="700" fill="url(#headGrad)">
+    <tspan x="60" dy="0" textLength="1000" lengthAdjust="spacingAndGlyphs">ShaperBox Full Access +</tspan>
+    <tspan x="60" dy="66" textLength="480" lengthAdjust="spacingAndGlyphs">Product Key Patch</tspan>
+  </text>
+
+  <text x="60" y="255" font-family="'Segoe UI', Arial, sans-serif" fill="#c7d2fe" opacity="0.9" textLength="1080.0" lengthAdjust="spacingAndGlyphs" font-size="21.2">
+    Unlocks pluggable full-access modules for the Cableguys ShaperBox plugin ecosystem
+  </text>
+
+  <line x1="60" y1="280" x2="640" y2="280" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+</svg>
